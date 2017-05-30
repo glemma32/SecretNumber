@@ -22,12 +22,12 @@ public class SecretNumber {
 	    	System.out.println("You guessed too high");
 		}
 		
+		System.out.println("The secret number is " + x);
 		System.out.println("Do you want to try again Y/N");
 		Scanner choice= new Scanner(System.in);
 		y= choice.next();
 		}
 		while(y.equalsIgnoreCase("Y"));
-		System.out.println("The secret number is " + x);
 		
 		}
 
