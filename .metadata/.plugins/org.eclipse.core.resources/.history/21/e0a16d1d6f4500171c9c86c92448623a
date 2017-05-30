@@ -1,0 +1,34 @@
+import java.util.Random;
+import java.util.Scanner;
+
+public class SecretNumber {
+	public static void main(String[] args){
+		
+		Random r = new Random();
+		int x = 1 + r.nextInt(100);
+		int number;
+		String y="";
+		
+		do{
+		System.out.println("What is the secret number?");
+		Scanner Snumber= new Scanner(System.in);
+		number= Snumber.nextInt();{
+		
+		if(number==x)
+			System.out.println("Your guess is right");
+	    else if(number<x)
+	    	System.out.println("You guessed too low");
+	    else
+	    	System.out.println("You guessed too high");
+		}
+		
+		System.out.println("The secret number is " + x);
+		System.out.println("Do you want to try again Y/N");
+		Scanner choice= new Scanner(System.in);
+		y= choice.next();
+		}
+		while(y.equalsIgnoreCase("Y"));
+		
+		}
+
+}

@@ -1,0 +1,15 @@
+import java.util.Random;
+
+public class Magic8Ball {
+	public static void main(String[] args){
+		
+		String[] s = {"your", "array", "of", "strings"};
+
+		Random ran = new Random();
+		String s_ran = s[ran.nextInt(s.length)];
+		String[] s = {"your", "array", "of", "strings"};
+
+		System.out.println(s);
+	}
+
+}

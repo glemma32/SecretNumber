@@ -1,0 +1,11 @@
+import java.util.Random;
+
+public class SecretNumber {
+	public static void main(String[] args){
+		
+		Random r = new Random();
+		int x = 1 + r.nextInt(10);
+		System.out.println(x);
+	}
+
+}

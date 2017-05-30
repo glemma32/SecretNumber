@@ -1,0 +1,16 @@
+import java.util.Random;
+
+public class Magic8Ball {
+	public static void main(String[] args){
+		
+		String[] s = {"It is certain", "It is decidedly so", "Without a doubt", "Yes definitely",
+				     "You may rely on it","As I see it, yes", "Most likely", "outlook good", "Yes",
+				      "Signs point to yes"};
+
+		Random ran = new Random();
+		String s_ran = s[ran.nextInt(s.length)];
+	
+		System.out.println(s_ran);
+	}
+
+}

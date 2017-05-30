@@ -1,0 +1,21 @@
+package classroom406;
+
+import java.util.Scanner;
+
+public class PrintingDays {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		System.out.println("Enter the month");
+		Scanner scannerInput = new Scanner(System.in);
+		int monthSelected =  scannerInput.nextInt();
+		
+		if(monthSelected==1)
+		{
+			System.out.println("January has 31 days");
+		}
+		if(monthSelected==)
+	}
+
+}

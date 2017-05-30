@@ -1,0 +1,75 @@
+package classroom406;
+
+import java.util.Scanner;
+
+public class PrintingDaysInString {
+
+	public static void main(String[] args) {
+
+		String monthSelected;
+				
+			System.out.println("Enter the the first three letters of the month");
+			Scanner scannerInput = new Scanner(System.in);
+			monthSelected =  scannerInput.next();
+			while(!monthSelected.equals("stop"))
+			{
+			/*while(monthSelected.equals())
+			{*/
+			
+			if(monthSelected.equalsIgnoreCase("Jan"))
+			{
+				System.out.println("January has 31 days");
+			}
+			else if(monthSelected.equalsIgnoreCase("Feb"))
+			{
+				System.out.println("Feburary has 28 days");
+			}
+			else if(monthSelected.equalsIgnoreCase("Mar"))
+			{
+				System.out.println("March has 30 days");
+			}
+			else if(monthSelected.equalsIgnoreCase("Apr"))
+			{
+				System.out.println("April has 31 days");
+			}
+			else if(monthSelected.equalsIgnoreCase("May"))
+			{
+				System.out.println("May has 30 days");
+			}
+			else if(monthSelected.equalsIgnoreCase("Jun"))
+			{
+				System.out.println("June has 30 days");
+			}
+			else if(monthSelected.equalsIgnoreCase("Jul"))
+			{
+				System.out.println("July has 30 days");
+			}
+			else if(monthSelected.equalsIgnoreCase("Aug"))
+			{
+				System.out.println("August has 30 days");
+			}
+			else if(monthSelected.equalsIgnoreCase("Sep"))
+			{
+				System.out.println("September has 30 days");
+			}
+			else if(monthSelected.equalsIgnoreCase("Oct"))
+			
+			{	
+				System.out.println("October has 30 days");
+			}
+			else if(monthSelected.equalsIgnoreCase("Nov"))
+			{
+				System.out.println("November has 30 days");
+			}
+			else if(monthSelected.equalsIgnoreCase("Dec"))
+			{
+				System.out.println("December has 30 days");
+			}
+			else 
+				{
+					System.out.println("You enter an invalid word");
+					System.exit(1);
+				}
+			}
+}
+}

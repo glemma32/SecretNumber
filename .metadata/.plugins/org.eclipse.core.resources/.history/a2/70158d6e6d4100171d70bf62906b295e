@@ -1,0 +1,40 @@
+package classroom406;
+
+import java.util.Scanner;
+
+public class PrintingDays {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		System.out.println("Enter the month" + ""+"/n");
+		Scanner scannerInput = new Scanner(System.in);
+		int monthSelected =  scannerInput.nextInt();
+		
+		if(monthSelected==1)
+		{
+			System.out.println("January has 31 days");
+		}
+		else if(monthSelected==2)
+		{
+			System.out.println("Feburary has 28 days");
+		}
+		else if(monthSelected==3)
+		{
+			System.out.println("March has 30 days");
+		}
+		else if(monthSelected==4)
+		{
+			System.out.println("April has 31 days");
+		}
+		else if(monthSelected==5)
+		{
+			System.out.println("May has 30 days");
+		}
+		else 
+			{
+				System.out.println("You enter an invalid number");
+			}
+	}
+
+}

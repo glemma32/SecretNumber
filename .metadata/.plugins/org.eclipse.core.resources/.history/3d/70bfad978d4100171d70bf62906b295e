@@ -1,0 +1,15 @@
+
+public class EscapeSequences {
+	public static void main(String[] args){
+		
+		System.out.println("\t**\n");
+		System.out.println("\r\b*\b\b*\n");
+		//System.out.println("\t\n\r*");
+			}
+
+}
+ 
+
+
+ 
+

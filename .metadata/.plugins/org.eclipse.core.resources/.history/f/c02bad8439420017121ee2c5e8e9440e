@@ -1,0 +1,58 @@
+import java.util.Scanner;
+
+public class SalesRecord {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int customerId,salesAmount;
+		String firstName, lastName,taxCode;
+		char choice='0';
+		double totalAmount;
+		
+		while(choice=='Y')
+		{
+		System.out.println("Enter your ID:");
+		Scanner Id= new Scanner(System.in);
+		customerId= Id.nextInt();
+		
+		System.out.println("Enter your full name:");
+		Scanner Fname= new Scanner(System.in);
+		firstName= Fname.next();
+		Scanner Lname= new Scanner(System.in);
+		lastName= Lname.next();
+		
+		System.out.println("Enter your tax code:");
+		Scanner tax= new Scanner(System.in);
+		taxCode= tax.next();
+		
+		System.out.println("Enter the sales amount");
+		Scanner Sales= new Scanner(System.in);
+		salesAmount= Sales.nextInt();
+		
+		if(taxCode=="NRM")
+		{
+			totalAmount= salesAmount+(salesAmount*0.06);
+			System.out.println("Your tax amount is 6%");
+			totalAmount= salesAmount+(salesAmount*0.06);
+			System.out.println("Your total amount is: "+ totalAmount);
+		}
+		else if(taxCode=="NPF")
+		{
+			totalAmount= salesAmount;
+			System.out.println("Your have tax exemption");
+			System.out.println("Your total amount is: "+ totalAmount);
+		}
+		else if(taxCode=="BIZ")
+		{
+			totalAmount= salesAmount+(salesAmount*0.045);
+			System.out.println("Your tax amount is 4.5%");
+			System.out.println("Your total amount is: "+ totalAmount);
+		}
+		
+		else
+			System.out.println("You enter an invalid value");
+
+	}
+
+}

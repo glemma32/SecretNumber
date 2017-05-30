@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class MowingTime {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		 
+		int time, length, width, area;
+		
+		System.out.println("Enter the length and width");
+		Scanner lengthInput = new Scanner(System.in);
+		length = lengthInput.nextInt();
+		Scanner widthInput = new Scanner(System.in);
+		width = widthInput.nextInt();
+		
+		area=length*width;
+		time=area/20;
+		
+		System.out.println("The time required to mow your yard is:"+ time+"minutes");
+		
+
+	}
+
+}
